@@ -58,10 +58,10 @@ namespace Lab_3
                     for (int i = 0; i < NumberOfTests; i++)
                     {
                         var graphicsSecond = pictureBox.CreateGraphics();
-                        graphicsSecond.FillRectangle(Brushes.Red, i,
+                        graphicsSecond.FillRectangle(Brushes.Aqua, i,
                             pictureBox.Height -
                             (int) (probabilityDensityForFirstRandomVariables[i] * firstNumber * 150000), 3, 3);
-                        graphicsSecond.FillRectangle(Brushes.Green, i,
+                        graphicsSecond.FillRectangle(Brushes.Coral, i,
                             pictureBox.Height -
                             (int) (probabilityDensityForSecondRandomVariables[i] * secondNumber * 150000), 3, 3);
                     }
@@ -155,7 +155,7 @@ namespace Lab_3
             if (firstProbability != 0 && secondProbability != 0)
             {
                 var graph = pictureBox.CreateGraphics();
-                graph.DrawLine(new Pen(Brushes.Blue), new Point((int) tmp, 0),
+                graph.DrawLine(new Pen(Brushes.Black), new Point((int) tmp, 0),
                     new Point((int) tmp, pictureBox.Height));
             }
 
